@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registartion Form</title>
+    <style>
+        table {
+            margin: 5px;
+            padding: 3px;
+            height: 90vh;
+            width: 40vw;
+            border-width: 10px;
+            border-radius: 20px;
+            table-layout: fixed; 
+        }
+
+        
+        table td, table th {
+            width: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <table border="2" bordercolor="red">
+       
+        <tr>
+            <td><label for="1st">First Name</label></td>
+            <td><input  tabindex="2" accesskey="s" id="1st" type="text"></td>
+            
+        </tr>
+        <tr>
+            <td><label for="2nd">Second Name</label></td>
+            <td><input  tabindex="2" accesskey="n" id="2nd" type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="pass">Password</label></td>
+            <td><input  tabindex="1" accesskey="p" id="pass" type="password"></td>
+           
+            
+        </tr>
+        <tr>
+            <th rowspan="2"><h3>Gender</h3></th>
+            <td><input type="radio" name="r1">Male</td>
+            
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">Female</td>
+
+        </tr>
+        <tr>
+            <td><label>Birthday</label></td>
+           <td><input type="date"></td>
+
+        </tr>
+        <tr>
+            <th colspan="2"><u><h1>Interests</h1></u></th>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox">Sports</td>
+            <td><input type="checkbox">Music</td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox">Books</td>
+            <td><input type="checkbox">Computer stuff</td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox">Fashion</td>
+            <td><input type="checkbox">Movies</td>
+
+        </tr>
+        <tr>
+            <th colspan="2"><button>Submit</button></th>
+        </tr>
+        
+    </table>
+    
+</body>
+</html>

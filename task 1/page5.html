@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login form</title>
+    <style>
+          form {
+            margin: auto;
+            margin-top: 80px;
+            width: 40vw;
+        }
+        
+        fieldset {
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        legend {
+            color: red;
+            font-weight: bold;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <form action="page2.html" method="get">
+       
+        <fieldset >
+            <legend style="color: red;">log in </legend>
+            <label for="in1">Name</label> <input tabindex="2" accesskey="n" id="in1" placeholder="enter your username here!" type="text" name="userName">
+                <br>
+            <label>Password</label> <input  tabindex="1" type="password" name="pass" accesskey="p">
+            <br>
+            <label>Select your location :</label> <select  >
+                <optgroup label="Africia" >
+                <option>Egypt</option>
+                <option>sudan</option>
+                <option>namibia</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option >France</option>
+                <option >Russia</option>
+                <option>UK</option>
+            </optgroup>
+            <optgroup label="North America" disabled>
+                <option >Canada</option>
+                <option >Maxico</option>
+                <option>USA</option>
+            </optgroup>
+            </select>
+            <br>
+            <input type="checkbox"><label>Remember me</label>
+            
+           
+        <br>
+        <button type="submit"> login</button>
+           
+            
+            
+        </fieldset>
+        
+        
+        
+        </form>
+    
+</body>
+</html>
