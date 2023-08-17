@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Page</title>
+</head>
+<body>
+    <h1>Greetings!</h1>
+    <hr>
+    <script>
+        document.write(`<h2>Hello, ${location.search.split("&")[0].split("=")[1]} <span id="username"></span></h2>`);
+        document.write(`<h2>Email: ${location.search.split("&")[1].split("=")[1].replace('%40', '@')} <span id="username"></span></h2>`);
+
+    </script>
+    </script>
+</body>
+</html>

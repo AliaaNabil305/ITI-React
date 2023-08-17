@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .buttons-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        #image-container {
+            margin-top: 20px;
+        }
+
+        #img1 {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!--<input type="button" value="open" onclick="openwin()">
+    <h2>User Registration</h2>
+    <hr>
+    <br>
+    <form action="page2.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Register</button>
+
+    </form>-->
+
+   
+    <div class="buttons-container">
+
+    <input type="button" value="Next" onclick="next()">
+    <input type="button" value="Previous" onclick="previous()">
+    <input type="button" value="Stop" onclick="stop()">
+    <input type="button" value="Slideshow" onclick="slideshow()">
+    </div>
+
+
+<div id="image-container">
+    <img src="./images/1.jpg" id="img1">
+</div>
+</body>
+</html>
