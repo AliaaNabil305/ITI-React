@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Email Address</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+   
+  }
+
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+ 
+
+  input {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+  }
+
+  input:valid {
+    border-color: rgb(76, 87, 76);
+  }
+
+  input:invalid {
+    border-color: red;
+  }
+
+  .error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  input:invalid + .error-message {
+    display: block;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #5d666e;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="form-title">Change Email Address</h1>
+    <form>
+    
+      <input type="text" id="username" placeholder="username" name="username" pattern="[A-Za-z]+" required>
+      <p class="error-message">The required username may only be a series of an alphabetical characters</p>
+
+      
+      <input type="email" id="email" placeholder="Email" name="email" required>
+      <p class="error-message">The required email address may not include any special characters other than the @ sign</p>
+
+      <button type="submit">Change</button>
+    </form>
+  </div>
+</body>
+</html>

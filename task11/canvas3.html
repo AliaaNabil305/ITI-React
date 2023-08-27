@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="400" height="300"></canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+  var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+
+  gradient.addColorStop(0, "blue");      
+  gradient.addColorStop(0.5, "white");   
+  gradient.addColorStop(1, "green");     
+
+
+  ctx.fillStyle = gradient;
+  ctx.fillRect(50, 50, canvas.width-100, canvas.height-100);
+
+  
+  var middleY = canvas.height / 2 - 20; 
+  ctx.beginPath();
+  ctx.moveTo(150, middleY);
+  ctx.lineTo(canvas.width-150, middleY);
+  ctx.strokeStyle = "black";
+  ctx.stroke();
+
+ 
+  var lineX = (canvas.width - 300) / 2; 
+  
+  ctx.beginPath();
+  ctx.moveTo(200 - lineX, middleY);
+  ctx.lineTo(200 - lineX, canvas.height-120);
+  ctx.strokeStyle = "black";
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.moveTo(canvas.width-200 + lineX, middleY);
+  ctx.lineTo(canvas.width-200 + lineX, canvas.height-120);
+  ctx.strokeStyle = "black";
+  ctx.stroke();
+</script>
+
+</body>
+</html>

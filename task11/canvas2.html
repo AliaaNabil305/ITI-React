@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="400" height="300"></canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+  var lineLength = 0;
+  var maxLength = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
+  var animationSpeed = 2;
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    if (lineLength < maxLength) {
+      lineLength += animationSpeed;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(lineLength, lineLength * (canvas.height / canvas.width));
+      ctx.strokeStyle = "red";
+      ctx.stroke();
+      requestAnimationFrame(animate);
+    } else {
+      alert("Animation ended");
+    }
+  }
+
+  animate();
+</script>
+
+</body>
+</html>

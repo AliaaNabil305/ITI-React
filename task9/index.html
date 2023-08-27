@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video player</title>
+  
+</head>
+<body>
+    <video id="videoPlayer"   src="./video/frozen.mp4" width="1300" height="550"  poster="./image/frozen.jpg"></video>
+    <button onclick="play()">play</button>
+    <button onclick="stop()">stop</button>
+    <button onclick="setPlaybackRate(0.5)"><<</button>
+    <button onclick="setPlaybackRate(1.75)">>></button>
+    <button onclick="backward(10)"><</button>
+    <button onclick="forward(10)">></button>
+    <button onclick="mute()">mute</button>
+ 
+   
+    <script>
+        var videoPlayer = document.getElementById('videoPlayer');
+         function play() {
+            videoPlayer.play();
+        }
+
+        function stop() {
+            videoPlayer.pause();
+        }
+
+        function setPlaybackRate(rate) {
+            videoPlayer.playbackRate = rate;
+        }
+
+        function backward(seconds) {
+            videoPlayer.currentTime -= seconds;
+        }
+
+        function forward(seconds) {
+            videoPlayer.currentTime += seconds;
+        }
+
+        function mute() {
+            videoPlayer.muted = !videoPlayer.muted;
+        }
+    </script>
+</body>
+</html>

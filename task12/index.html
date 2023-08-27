@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color:  #c9c6c6;
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; 
+  }
+  
+ 
+  
+  @media (max-width: 800px) {
+    .navbar {
+      flex-direction: column; 
+      align-items: center; 
+    }
+
+    .navbar a {
+      margin: 10px 0; 
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .content .box {
+    flex: 1;
+    align-items: center;
+    border: 5px solid black; 
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 800px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content .box {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  .footer {
+    background-color: #c9c6c6;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; 
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="content">
+      <div class="box">
+        <p>This is flex items</p>
+        <div class="footer">
+          <p>Footer</p>
+        </div>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, dolorum! Rem exercitationem dignissimos reprehenderit quidem ad voluptas, officiis eligendi quisquam voluptatibus libero accusamus perferendis consectetur. Quisquam dolorem saepe vel veniam!</p>
+        <div class="footer">
+          <p>Footer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

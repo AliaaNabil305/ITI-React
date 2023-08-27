@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<canvas id="myCanvas" width="400" height="300"></canvas>
+
+<script>
+ 
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+ 
+  var img = new Image();
+  img.onload = function() {
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    
+    
+    ctx.fillStyle = "black";
+    ctx.font = "20px Arial";
+    ctx.textAlign = "center";
+    ctx.fillText("It's gonna be okay, sweetheart", canvas.width / 2, canvas.height - 20);
+  };
+  img.src="image/bird.jpg"; 
+</script>
+
+</body>
+</html>
