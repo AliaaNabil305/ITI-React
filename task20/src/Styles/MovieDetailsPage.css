@@ -1,0 +1,33 @@
+.movie-details-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .movie-details-content {
+    text-align: center;
+  }
+  
+  .movie-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .movie-poster {
+    max-width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-overview {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .loading {
+    font-size: 2em;
+  }
+  
